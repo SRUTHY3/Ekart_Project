@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>
+{% load static %}
+<!--
+	Resto by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resto - Restaurant Bootstrap 4 Template by GetTemplates.co</title>
+    <meta name="description" content="Resto">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'vendor/select2/select2.min.css'%}">
+    <link rel="stylesheet" href="{% static 'vendor/owlcarousel/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.min.css'%}">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+	<div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	
+	<div class="sidenav-content">
+		<p>
+			Kuncen WB1, Wirobrajan 10010, DIY
+		</p>
+		<p>
+			<span class="fs-16 primary-color">(+68) 120034509</span>
+		</p>
+		<p>info@yourdomain.com</p>
+	</div>
+</div>	<div id="side-search" class="sidenav">
+	<a href="javascript:void(0)" id="side-search-close">&times;</a>
+	<div class="sidenav-content">
+		<form action="">
+
+			<div class="input-group md-form form-sm form-2 pl-0">
+			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+			  <div class="input-group-append">
+			    <button class="input-group-text red lighten-3" id="basic-text1">
+			    	<i class="fas fa-search text-grey" aria-hidden="true"></i>
+			    </button>
+			  </div>
+			</div>
+
+		</form>
+	</div>
+	
+ 	
+</div>	<div id="canvas-overlay"></div>
+	<div class="boxed-page">
+
+        
+        
+        
+        <head>
+            <meta charset="utf-8">
+            <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+            <!--  All snippets are MIT license http://bootdey.com/license -->
+            <title>MyProfile</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <body>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <div class="container">
+        <div class="row flex-lg-nowrap">
+          <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+            <div class="card p-3">
+              
+            </div>
+          </div>
+        
+          <div class="col">
+            
+            <div class="row">
+              <div class="col mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="e-profile">
+                      <div class="row">
+                        <div class="col-12 col-sm-auto mb-3">
+                          {% if prof.id %}
+                          <div class="mx-auto" style="width: 140px;">
+                            <img src="{{prof.Businessimage.url}}" alt="" width="200" height="200">
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                          <div class="text-center text-sm-left mb-2 mb-sm-0">
+                            <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Businessname}}</h4>
+                            <p class="mb-0">{{prof.Phone}}</p>
+                            <div class="text-muted"><small></small></div>
+                            
+                          </div>
+                          <div class="text-center text-sm-right">
+                            <span class="badge badge-secondary">Sale</span>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item"><a href="" class="active nav-link">Details</a></li>
+                      </ul>
+                      <div class="tab-content pt-3">
+                        <div class="tab-pane active">
+                          <form class="form" novalidate="">
+                            <div class="row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="form-group">
+                                      <label>FirstName</label>
+                                      <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Firstname}}</h4>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="form-group">
+                                      <label>Lastname</label>
+                                      <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Lastname}}</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="form-group">
+                                    <label>Businesstype</label>
+                                    <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Businesstype}}</h4>
+                                  </div>
+                                </div>
+                              
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="form-group">
+                                      <label>Email</label>
+                                      <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Email}}</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="row">
+                                  <div class="col mb-3">
+                                    <div class="form-group">
+                                      <label>Address</label>
+                                      <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Address}}</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-sm-6 mb-3">
+                                <div class="mb-2"><b></b></div>
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="form-group">
+                                      <label>Password</label>
+                                      <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Password}}</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-12 col-sm-6 mb-3">
+                                    <div class="mb-2"><b></b></div>
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="form-group">
+                                          <label>PanNumber</label>
+                                          <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{prof.Pannumber}}</h4>
+                                        </div>
+                                      </div>
+                                    </div>
+                                <div class="mx-auto" style="width: 140px;">
+                                  <img src="{{prof.Aadharcard.url}}" alt="" width="200" height="200">
+                                    </div>
+                               
+                              <div class="col-12 col-sm-5 offset-sm-1 mb-3">
+                                
+                                <div class="row">
+                                  <div class="col">
+                                    
+                                    <div class="custom-controls-stacked px-2">
+                                      <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="notifications-offers" checked=""> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>     
+              <div class="card">
+                <div class="card-body">
+                  <a href="{% url 'editproh' prof.id %}"  class="btn btn-primary">Edit Profile</a>
+                </div>
+                {%endif%}        
+
+                <div class="card">
+                  <div class="card-body">
+                    <button type="button" onclick="location.href='/';" class="btn btn-primary">Logout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <style type="text/css">
+        body{
+            margin-top:20px;
+            background:#f8f8f8
+        }
+        </style>
+        
+        <script type="text/javascript">
+        
+        </script>
+        </body>
+        </html>
+        
+        
+        
+        
+        <style type="text/css">
+        body{
+            margin-top:20px;
+            background:#f8f8f8
+        }
+        </style>
+        
+        <script type="text/javascript">
+        
+        </script>
+        </body>
+        </html>
+        
+        
+        
+        
+        
+
+
+
